@@ -39,12 +39,31 @@ pages.push({
   back: "book-back",
 });
 
+// export const UI = () => {
+//   const [page, setPage] = useAtom(pageAtom);
+
+//   useEffect(() => {
+//     const audio = new Audio("/audios/page-flip-01a.mp3");
+//     audio.play();
+//   }, [page]);
+
 export const UI = () => {
   const [page, setPage] = useAtom(pageAtom);
 
   useEffect(() => {
-    const audio = new Audio("/audios/page-flip-01a.mp3");
-    audio.play();
+    const handleUserInteraction = () => {
+      const audio = new Audio(new URL("/audios/page-flip-01a.mp3", import.meta.url).href);
+      audio.play().catch(error => {
+        console.error("Audio play failed:", error);
+      });
+    };
+
+    // Add an event listener for the first interaction
+    document.addEventListener('click', handleUserInteraction, { once: true });
+
+    return () => {
+      document.removeEventListener('click', handleUserInteraction);
+    };
   }, [page]);
 
   return (
