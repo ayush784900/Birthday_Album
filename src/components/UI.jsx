@@ -10,6 +10,8 @@ const pictures = [
   "DSC02064",
   "DSC01011",
   "DSC02031",
+  "DSC00933",
+  "DSC02064",
   "DSC01040",
   "DSC01420",
   "DSC01064",
