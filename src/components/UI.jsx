@@ -75,9 +75,9 @@ export const UI = () => {
       <main className=" pointer-events-none select-none z-10 fixed  inset-0  flex justify-between flex-col">
         <a
           className="pointer-events-auto mt-10 ml-10"
-          href="https://lessons.wawasensei.dev/courses/react-three-fiber"
+          href="https://ayushraj-portfolio.vercel.app/"
         >
-          <img className="w-20" src="/images/wawasensei-white.png" />
+          <img className="w-20" src="/images/pooja.png" />
         </a>
         <div className="w-full overflow-auto pointer-events-auto flex justify-center">
           <div className="overflow-auto flex items-center gap-4 max-w-full p-10">
@@ -115,10 +115,10 @@ export const UI = () => {
               Happy Birthday
             </h1>
             <h2 className="shrink-0 text-white text-8xl italic font-light">
-              Meri Guriya
+              Chutki
             </h2>
             <h2 className="shrink-0 text-white text-12xl font-bold">
-              Juhi
+              Pooja
             </h2>
             <h2 className="shrink-0 text-transparent text-12xl font-bold italic outline-text">
               God Bless You
@@ -141,10 +141,10 @@ export const UI = () => {
               Happy Birthday
             </h1>
             <h2 className="shrink-0 text-white text-8xl italic font-light">
-              Meri Guriya
+              chutki
             </h2>
             <h2 className="shrink-0 text-white text-12xl font-bold">
-              Juhi
+              pooja
             </h2>
             <h2 className="shrink-0 text-transparent text-12xl font-bold italic outline-text">
               God Bless you
